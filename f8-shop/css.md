@@ -129,5 +129,7 @@
     - Làm message
     - Làm 1 thành phần trên website
 
-
+## Trường hợp Block lồng Block
+    - Block con là thành phần dùng chung
+    - Block con chứa nhiều element
 

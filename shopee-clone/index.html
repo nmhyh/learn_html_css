@@ -20,7 +20,21 @@
             <div class="grid">
                 <nav class="navbar">
                     <ul class="navbar__list">
-                        <li class="navbar__item navbar__item--separate">Vào cửa hàng trên ứng dụng F8-Shop</li>
+                        <li class="navbar__item navbar__item--has-qr navbar__item--separate">
+                            Vào cửa hàng trên ứng dụng F8-Shop
+                            <!-- Nav QR code -->
+                            <div class="nav-qr">
+                                <img class="nav-qr__img" src="./assets/img/qr_code.png" alt="QR code" srcset="">
+                                <div class="nav-qr__apps">
+                                    <a class="nav-qr__link" href="">
+                                        <img class="nav-qr__img--download" src="./assets/img/app-store.png" alt="link app store" srcset="">
+                                    </a>
+                                    <a class="nav-qr__link" href="">
+                                        <img class="nav-qr__img--download" src="./assets/img/google-play.png" alt="link google play" srcset="">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
                         <li class="navbar__item">
                             <span class="navbar__title--no-pointer">Kết nối</span>
                             <a class="navbar__item--icon-link" href="">
@@ -32,11 +46,62 @@
                         </li>
                     </ul>
                     <ul class="navbar__list">
-                        <li class="navbar__item">
+                        <li class="navbar__item navbar__item--has-notify">
                             <a href="" class="navbar__item--link">
                                 <em class="navbar__icon fas fa-bell"></em>
                                 Thông báo
                             </a>
+                            <div class="nav__notify">
+                                <header class="nav_notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="nav__notify-list">
+                                    <li class="nav__notify-item nav__notify-item--viewed">
+                                        <a class="nav__notify-link" href="">
+                                            <img class="nav__notify-img" src="./assets/img/my-pham-ohui.jpg" alt="" srcset="">
+                                            <div class="nav__notify-info">
+                                                <span class="nav__notify-name">
+                                                    Mỹ phẩm Ohui chính hãng
+                                                </span>
+                                                <span class="nav__notify-description">
+                                                    Mô tả mỹ phẩm Ohui chính hãng
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav__notify-item">
+                                        <a class="nav__notify-link" href="">
+                                            <img class="nav__notify-img" src="./assets/img/laroche-posay.jpg" alt="" srcset="">
+                                            <div class="nav__notify-info">
+                                                <span class="nav__notify-name">
+                                                    LA ROCHE POSAY kem chống nắng
+                                                </span>
+                                                <span class="nav__notify-description">
+                                                    LA ROCHE POSAY KEM CHỐNG NẮNG Laroche posay Shaka Fluid SPF50+
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav__notify-item">
+                                        <a class="nav__notify-link" href="">
+                                            <img class="nav__notify-img" src="./assets/img/banh-trung-thu.jpg" alt="" srcset="">
+                                            <div class="nav__notify-info">
+                                                <span class="nav__notify-name">
+                                                    Bánh trung thu Kinh Đô
+                                                </span>
+                                                <span class="nav__notify-description">
+                                                    [CHÍNH HÃNG] KINH ĐÔ BÁNH TRUNG THU BÁNH NƯỚNG - 1 Bánh Nướng 1 Trứng 150g
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <div class="nav__notify-footer">
+                                        <a href="" class="nav__notify-footer-btn">
+                                            Xem tất cả
+                                        </a>
+                                    </div>
+                                </ul>
+                            </div>
                         </li>
                         <li class="navbar__item">
                             <a href="" class="navbar__item--link">
@@ -60,6 +125,60 @@
         <footer class="footer">
 
         </footer>
+    </div>
+
+    <!-- Modal layout -->
+    <div class="modal">
+        <div class="modal_overlay">
+
+        </div>
+        <div class="modal__body">
+            <!-- Form Login/Register -->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với F8-Shop về
+                            <a class="auth-form__policy-link" href="">Điều khoản dịch vụ</a> &
+                            <a class="auth-form__policy-link" href="">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+                
+                <div class="auth-form__socials">
+                    <a href="" class="btn btn--size-s auth-form__socials--facebook btn--with-icon">
+                        <em class="fab auth-form__socials-icon fa-facebook-square"></em>
+                        <span class="auth-form__socials-label">Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="btn btn--size-s auth-form__socials--google btn--with-icon">
+                        <em class="fab auth-form__socials-icon fa-google"></em>
+                        <span class="auth-form__socials-label">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

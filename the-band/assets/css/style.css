@@ -1,0 +1,106 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 
+1. Vị trí
+2. Kích thước (width, height)
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình tròn, vuông,...)
+*/
+
+.wrapper {
+
+}
+
+.header {
+    height: 46px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list-item {
+    display: inline-block;
+}
+
+.navbar__list-link {
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    text-transform: uppercase;
+}
+
+.navbar__sub-nav-link {
+    color: #000;
+    text-decoration: none;
+    line-height: 38px;
+    padding: 0px 16px;
+}
+
+.navbar__list-item:hover .navbar__list-link,
+.navbar__sub-nav-item:hover .navbar__sub-nav-link {
+    color: #000;
+    background-color: #ccc;
+    display: block;
+}
+
+.navbar__list-item-subnav {
+    position: relative;
+}
+
+.navbar__list-item-subnav:hover .navbar__sub-nav {
+    display: block;
+}
+
+.navbar__sub-nav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar__sub-nav-item {
+    min-width: 160px;
+}
+
+.seach {
+    background-color: #f44336;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.slider {
+
+}
+
+.content {
+
+}
+
+.footer {
+
+}
+
+
+

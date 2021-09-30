@@ -20,12 +20,18 @@ html {
 
 }
 
+/* Start Header */
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 46px;
     background-color: #000;
     color: white;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .navbar {
@@ -35,6 +41,7 @@ html {
 .navbar__list {
     display: flex;
     align-items: center;
+    list-style: none;
 }
 
 .navbar__list-item {
@@ -76,6 +83,8 @@ html {
     position: absolute;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    list-style: none;
 }
 
 .navbar__sub-nav-item {
@@ -83,16 +92,54 @@ html {
 }
 
 .seach {
-    background-color: #f44336;
     padding: 12px 24px;
     color: white;
     text-decoration: none;
     display: block;
 }
 
-.slider {
-
+.seach:hover {
+    background-color: #f44336;
 }
+
+/* End Header */
+
+/* Start Slider */
+.slider {
+    margin-top: 46px;
+    /* 50% chiều ngang của chính nó */
+    padding-top: 50%;
+    /* background-image -> background-position -> background-size -> background-repeat */
+    background: url('/the-band/assets/img/chicago.jpg') top center / cover no-repeat ;
+    position: relative;
+}
+
+.slider-text-content {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 47px;
+    /* case 1 */
+    width: 100%;
+    /* case 2 */
+    /* left: 0;
+    right: 0; */
+    /* case 3 */
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+.slider-text__heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.slider-text__body {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* End Slider */
 
 .content {
 

@@ -110,7 +110,7 @@ html {
     /* 50% chiều ngang của chính nó */
     padding-top: 50%;
     /* background-image -> background-position -> background-size -> background-repeat */
-    background: url('/the-band/assets/img/chicago.jpg') top center / cover no-repeat ;
+    background: url('../img/chicago.jpg') top center / cover no-repeat ;
     position: relative;
 }
 

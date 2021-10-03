@@ -140,9 +140,9 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="place-buy-btn btn">
+                                <button class="place-buy-btn btn js-buy-ticket">
                                     Buy Tickets
-                                </a>
+                                </button>
                             </div>
                         </div>
                         <div class="place-item s-col-full">
@@ -153,9 +153,9 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="place-buy-btn btn">
+                                <button class="place-buy-btn btn js-buy-ticket">
                                     Buy Tickets
-                                </a>
+                                </button>
                             </div>
                         </div>
                         <div class="place-item s-col-full">
@@ -166,9 +166,9 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="place-buy-btn btn">
+                                <button class="place-buy-btn btn js-buy-ticket">
                                     Buy Tickets
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -254,9 +254,9 @@
         </footer>
     </div>
 
-    <div class="modal">
-        <div class="modal-container">
-            <div class="modal-close">
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
                 <em class="far fa-window-close"></em>
             </div>
             <header class="modal-header">
@@ -295,7 +295,7 @@
         let headerHeight = header.clientHeight;
 
         // Close/ open mobile menu
-        mobileMenuElement.onclick = function() {
+        mobileMenuElement.onclick = () => {
             let isClosed = header.clientHeight === headerHeight;
             if (isClosed) {
                 header.style.height = 'auto';
@@ -310,7 +310,7 @@
         for (let i in menuItems) {
             let menuItem = menuItems[i];
 
-            menuItem.onclick = function(event) {
+            menuItem.onclick = (event) => {
                 // Trong thẻ có chứa 1 thẻ liền kề cùng cấp
                 let isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('navbar__sub-nav');
                 if (isParentMenu) {
@@ -323,6 +323,35 @@
                 }
             }
         }
+    </script>
+
+    <script>
+        let buyBtns = document.getElementsByClassName('js-buy-ticket');
+        let modal = document.querySelector('.js-modal');
+        let modalContainer = document.querySelector('.js-modal-container');
+        let closeModal = document.querySelector('.js-modal-close');
+
+        // display modal buy ticket (add class open in modal-open)
+        function showBuyTickets() {
+            modal.classList.add('modal-open');
+        }
+
+        // hiden modal buy ticket (remove class open in modal-open)
+        function hideBuyTickets() {
+            modal.classList.remove('modal-open');
+        }
+
+        for (let buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTickets);
+        }
+
+        closeModal.addEventListener('click', hideBuyTickets);
+
+        modal.addEventListener('click', hideBuyTickets);
+
+        modalContainer.addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
     </script>
 </body>
 </html>

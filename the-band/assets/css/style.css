@@ -319,6 +319,7 @@ html {
     text-decoration: none;
     padding: 10px 18px;
     display: inline-block;
+    text-align: center;
 }
 
 .btn:hover {
@@ -344,6 +345,10 @@ html {
 .contact-left-info em[class*="fa-"] {
     margin-right: 10px;
     display: inline-block;
+}
+
+.contact-left-info a:hover {
+    opacity: 0.7;
 }
 
 .contact-right {
@@ -521,6 +526,31 @@ html {
 
 }
 
+/* TABLET */
+@media (max-width: 1023px) {
+    .contact-btn-send,
+    .place-buy-btn {
+        width: 100%;
+    }
+
+    .socials {
+        font-size: 48px;
+    }
+
+    .socials-link {
+        margin: 0 8px;
+    }
+
+    .copy-right a {
+        padding: 12px 0px;
+        display: inline-block;
+    }
+
+    .contact-left-info {
+        line-height: 2;
+    }
+}
+
 /* MOBILE */
 @media (max-width: 739px) {
     .header {
@@ -575,7 +605,7 @@ html {
     }
 
     .contact-right {
-        margin-top: 10px;
+        margin-top: 16px;
     }
 
     .contact-name {

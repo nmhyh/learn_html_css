@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The band</title>
+    <link rel="icon" href="./assets/img/favicon-the-band.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,34 +15,34 @@
 <body>
     <div class="wrapper">
         <!-- Start Header -->
-        <header class="header">
+        <header class="header" id="header">
             <ul class="navbar__list">
                 <li class="navbar__list-item">
-                    <a href="" class="navbar__list-link">Home</a>
+                    <a href="#" class="navbar__list-link">Home</a>
                 </li>
                 <li class="navbar__list-item">
-                    <a href="" class="navbar__list-link">Band</a>
+                    <a href="#band" class="navbar__list-link">Band</a>
                 </li>
                 <li class="navbar__list-item">
-                    <a href="" class="navbar__list-link">Tour</a>
+                    <a href="#tour" class="navbar__list-link">Tour</a>
                 </li>
                 <li class="navbar__list-item">
-                    <a href="" class="navbar__list-link">Contact</a>
+                    <a href="#contact" class="navbar__list-link">Contact</a>
                 </li>
                 <li class="navbar__list-item navbar__list-item-subnav">
                     <a href="#" class="navbar__list-link">
                         More
                         <em class="navbar__list-icon fas fa-sort-down"></em>
                     </a>
-                    <ul class="navbar__sub-nav">
+                    <ul class="navbar__sub-nav" id="subNav">
                         <li class="navbar__sub-nav-item">
-                            <a href="" class="navbar__sub-nav-link">Merchandise</a>
+                            <a href="#" class="navbar__sub-nav-link">Merchandise</a>
                         </li>
                         <li class="navbar__sub-nav-item">
-                            <a href="" class="navbar__sub-nav-link">Extras</a>
+                            <a href="#" class="navbar__sub-nav-link">Extras</a>
                         </li>
                         <li class="navbar__sub-nav-item">
-                            <a href="" class="navbar__sub-nav-link">Media</a>
+                            <a href="#" class="navbar__sub-nav-link">Media</a>
                         </li>
                     </ul>
                 </li>
@@ -49,6 +50,10 @@
             <a href="#" class="seach">
                 <em class="seach-icon fas fa-search"></em>
             </a>
+
+            <div class="mobile-menu-btn" id="mobile-menu">
+                <em class="menu-icon fas fa-bars"></em>
+            </div>
         </header>
         <!-- End Header -->
 
@@ -68,7 +73,7 @@
         <!-- Start Content -->
         <div class="content">
             <!-- About Section -->
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">
                     THE BAND
                 </h2>
@@ -85,15 +90,15 @@
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="about-member-list">
-                    <div class="about-member-item">
+                    <div class="about-member-item s-col-full">
                         <p class="about-member-name">Name</p>
                         <img src="./assets/img/bandmember.jpg" alt="avatar member" class="about-member-avatar">
                     </div>
-                    <div class="about-member-item">
+                    <div class="about-member-item s-col-full">
                         <p class="about-member-name">Name</p>
                         <img src="./assets/img/bandmember.jpg" alt="avatar member" class="about-member-avatar">
                     </div>
-                    <div class="about-member-item">
+                    <div class="about-member-item s-col-full">
                         <p class="about-member-name">Name</p>
                         <img src="./assets/img/bandmember.jpg" alt="avatar member" class="about-member-avatar">
                     </div>
@@ -101,7 +106,7 @@
             </div>
 
             <!-- Tour Section -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text--white">
                         TOUR DATES
@@ -127,7 +132,7 @@
 
                     <!-- Places -->
                     <div class="row place-list">
-                        <div class="place-item">
+                        <div class="place-item s-col-full">
                             <img src="./assets/img/newyork.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -140,7 +145,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="place-item s-col-full">
                             <img src="./assets/img/paris.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
@@ -153,7 +158,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="place-item s-col-full">
                             <img src="./assets/img/sanfran.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
@@ -171,7 +176,7 @@
             </div>
 
             <!-- Contact Section -->
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">
                     CONTACT
                 </h2>
@@ -179,8 +184,8 @@
                     Fan? Drop a note!
                 </p>
 
-                <div class="contact-wrapper">
-                    <div class="contact-left">
+                <div class="contact-wrapper row">
+                    <div class="contact-left s-col-full">
                         <p class="contact-left-info">
                             <em class="fas fa-map-marker-alt"></em>
                             Chicago, US
@@ -194,13 +199,13 @@
                             Email: mail@mail.com
                         </p>
                     </div>
-                    <div class="contact-right">
+                    <div class="contact-right s-col-full">
                         <form action="">
                             <div class="contact-right-wrapper">
-                                <div class="contact-name">
+                                <div class="contact-name s-col-full">
                                     <input type="text" placeholder="Name" class="form-control">
                                 </div>
-                                <div class="contact-mail">
+                                <div class="contact-mail s-col-full">
                                     <input type="email" placeholder="Email" class="form-control">
                                 </div>
                             </div>
@@ -223,28 +228,28 @@
 
         <footer class="footer">
             <div class="socials">
-                <a class="socials-link" href="">
+                <a class="socials-link" href="#">
                     <em class="fab fa-facebook-square"></em>
                 </a>
-                <a class="socials-link" href="">
+                <a class="socials-link" href="#">
                     <em class="fab fa-instagram"></em>
                 </a>
-                <a class="socials-link" href="">
+                <a class="socials-link" href="#">
                     <em class="fab fa-snapchat"></em>
                 </a>
-                <a class="socials-link" href="">
+                <a class="socials-link" href="#">
                     <em class="fab fa-pinterest-p"></em>
                 </a>
-                <a class="socials-link" href="">
+                <a class="socials-link" href="#">
                     <em class="fab fa-twitter"></em>
                 </a>
-                <a class="socials-link" href="">
+                <a class="socials-link" href="#">
                     <em class="fab fa-linkedin-in"></em>
                 </a>
             </div>
 
             <p class="copy-right">
-                Powered by <a href="">w3.css</a>
+                Powered by <a href="#">w3.css</a>
             </p>
         </footer>
     </div>
@@ -283,5 +288,41 @@
             </footer>
         </div>
     </div>
+
+    <script>
+        let headerElement = document.getElementById('header');
+        let mobileMenuElement = document.getElementById('mobile-menu');
+        let headerHeight = header.clientHeight;
+
+        // Close/ open mobile menu
+        mobileMenuElement.onclick = function() {
+            let isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        // Auto close menu
+        let menuItems = document.querySelectorAll('.navbar__list li a[href*="#"]');
+        // console.log(menuItems);
+        for (let i in menuItems) {
+            let menuItem = menuItems[i];
+
+            menuItem.onclick = function(event) {
+                // Trong thẻ có chứa 1 thẻ liền kề cùng cấp
+                let isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('navbar__sub-nav');
+                if (isParentMenu) {
+                    event.preventDefault();
+                    let subNav = document.getElementById('subNav');
+                    console.log(subNav);
+                    subNav.style.display = 'block';
+                } else {
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
 </body>
 </html>

@@ -133,3 +133,23 @@
     - Block con là thành phần dùng chung
     - Block con chứa nhiều element
 
+## Media queries
+    - Chuỗi truy vấn (phân vùng viết css)
+    - Mỗi vùng có tác dụng trên mỗi kích thước màn hình khác nhau
+    - PC - Tablet - Mobile
+    - Syntax: 
+        <!-- Độ rộng tối đa -->
+        @media (max-width: ...px) {
+            <!-- CSS -->
+        }
+
+        <!-- Độ rộng tối thiểu -->
+        @media (min-width: ...px) {
+            <!-- CSS -->
+        }
+
+    - Kích thước:
+        PC: >= 1024px
+        TABLET: >= 740px & < 1024px
+        MOBILE: <= 740px
+

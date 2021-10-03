@@ -9,9 +9,23 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Start Common */
 .text--white {
     color: #fff !important;
 }
+
+.row {
+    /* margin-left: -8px;
+    margin-right: -8px; */
+    display: flex;
+}
+
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* End Common */
 
 /* 
 1. Vị trí
@@ -147,7 +161,7 @@ html {
     /* div center */
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0px;
+    padding: 64px 0px 112px;
 }
 
 .section-heading,
@@ -240,10 +254,10 @@ html {
 
 .place-list {
     margin-top: 32px;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
-    margin-bottom: 48px;
 }
+
 .place-item {
     width: 32%;
 }
@@ -278,7 +292,7 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn {
+.btn {
     margin-top: 15px;
     background-color: #000;
     color: #fff;
@@ -287,14 +301,107 @@ html {
     display: inline-block;
 }
 
-.place-buy-btn:hover {
+.btn:hover {
     color: #000;
     background-color: #ccc;
+    cursor: pointer;
 }
+
+/* Start Contact */
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.contact-left {
+    font-size: 18px;
+    line-height: 1.6rem;
+    width: 50%;
+}
+
+.contact-left-info em[class*="fa-"] {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.contact-right {
+    font-size: 15px;
+    width: 50%;
+}
+
+.contact-right-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-name {
+    width: 48%;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-mail {
+    width: 48%;
+}
+
+.contact-message {
+    width: 100%;
+}
+
+.contact-right-wrapper__message {
+    margin: 10px 0px;
+}
+
+.contact-btn-send {
+    margin-top: 10px;
+    float: right;
+    border: none;
+}
+
+/* End Contact */
+
+/* Map Section */
+.map-section img {
+    width: 100%;
+}
+
+/* Start Footer */
 
 .footer {
-
+    padding: 64px 16px;
+    text-align: center;
 }
+
+.socials {
+    font-size: 24px;
+}
+
+.socials-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.socials-link:hover,
+.copy-right a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.copy-right {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.copy-right a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* End Footer */
 
 /* modal */
 .modal {
@@ -304,5 +411,92 @@ html {
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.modal-close em {
+    font-size: 20px;
+}
+
+.modal-header {
+    background-color: #009688;
+    color: #fff;
+    height: 129px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.modal-header em {
+    margin-right: 16px;
+}
+
+.modal-body {
+    padding: 16px;
+    font-size: 15px;
+}
+
+.modal-label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    margin-bottom: 24px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.buy-ticket {
+    width: 100%;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+.buy-ticket:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
+
+.modal-help {
+
 }
 

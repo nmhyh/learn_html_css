@@ -126,7 +126,7 @@
                     </ul>
 
                     <!-- Places -->
-                    <div class="place-list">
+                    <div class="row place-list">
                         <div class="place-item">
                             <img src="./assets/img/newyork.jpg" alt="" class="place-img">
                             <div class="place-body">
@@ -135,7 +135,7 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="place-buy-btn">
+                                <a href="#" class="place-buy-btn btn">
                                     Buy Tickets
                                 </a>
                             </div>
@@ -148,7 +148,7 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="place-buy-btn">
+                                <a href="#" class="place-buy-btn btn">
                                     Buy Tickets
                                 </a>
                             </div>
@@ -161,7 +161,7 @@
                                 <p class="place-desc">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="place-buy-btn">
+                                <a href="#" class="place-buy-btn btn">
                                     Buy Tickets
                                 </a>
                             </div>
@@ -170,6 +170,7 @@
                 </div>
             </div>
 
+            <!-- Contact Section -->
             <div class="content-section">
                 <h2 class="section-heading">
                     CONTACT
@@ -177,17 +178,110 @@
                 <p class="section-sub-heading">
                     Fan? Drop a note!
                 </p>
+
+                <div class="contact-wrapper">
+                    <div class="contact-left">
+                        <p class="contact-left-info">
+                            <em class="fas fa-map-marker-alt"></em>
+                            Chicago, US
+                        </p>
+                        <p class="contact-left-info">
+                            <em class="fas fa-phone-alt"></em>
+                            Phone: +00 151515
+                        </p>
+                        <p class="contact-left-info">
+                            <em class="fas fa-envelope"></em>
+                            Email: mail@mail.com
+                        </p>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <div class="contact-right-wrapper">
+                                <div class="contact-name">
+                                    <input type="text" placeholder="Name" class="form-control">
+                                </div>
+                                <div class="contact-mail">
+                                    <input type="email" placeholder="Email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="contact-right-wrapper contact-right-wrapper__message">
+                                <div class="contact-message">
+                                    <input type="text" placeholder="Message" class="form-control">
+                                </div>
+                            </div>
+                            <input type="submit" value="SEND" class="btn contact-btn-send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="map">
             </div>
         </div>
         <!-- End Content -->
 
         <footer class="footer">
+            <div class="socials">
+                <a class="socials-link" href="">
+                    <em class="fab fa-facebook-square"></em>
+                </a>
+                <a class="socials-link" href="">
+                    <em class="fab fa-instagram"></em>
+                </a>
+                <a class="socials-link" href="">
+                    <em class="fab fa-snapchat"></em>
+                </a>
+                <a class="socials-link" href="">
+                    <em class="fab fa-pinterest-p"></em>
+                </a>
+                <a class="socials-link" href="">
+                    <em class="fab fa-twitter"></em>
+                </a>
+                <a class="socials-link" href="">
+                    <em class="fab fa-linkedin-in"></em>
+                </a>
+            </div>
 
+            <p class="copy-right">
+                Powered by <a href="">w3.css</a>
+            </p>
         </footer>
     </div>
 
     <div class="modal">
-        
+        <div class="modal-container">
+            <div class="modal-close">
+                <em class="far fa-window-close"></em>
+            </div>
+            <header class="modal-header">
+                <em class="fas fa-shopping-bag"></em>
+                Tickets
+            </header>
+
+            <div class="modal-body">
+                <label for="ticket-quantity" class="modal-label">
+                    <em class="fas fa-shopping-cart"></em>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" class="modal-input" id="ticket-quantity" placeholder="How many?">
+                <label for="ticket-email" class="modal-label">
+                    <em class="fas fa-user"></em>
+                    Send To
+                </label>
+                <input type="text" class="modal-input" id="ticket-email" placeholder="Enter email...">
+                <button class="buy-ticket">
+                    Pay
+                    <em class="fas fa-check"></em>
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">
+                    Need <a href="">help?</a>
+                </p>
+            </footer>
+        </div>
     </div>
 </body>
 </html>

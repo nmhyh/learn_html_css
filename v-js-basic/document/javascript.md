@@ -56,3 +56,45 @@
     - Dữ liệu phức tạp - Complex Data
         + Function
         + Object
+
+4. Làm việc với chuỗi
+    - Length
+    - Find index
+    - Cut string
+    - Replace (thay đổi tất cả chữ js thành javascript -> myString.replace(/js/g, 'javascipt'))
+    - Convert to upper case
+    - Convert to lower case
+    - Trim
+    - Split
+    - Get a character by index (.charAt(1))
+
+5. Kiểu số (Number)
+    - Làm việc với Number
+        + To string
+        + To Fixed (Làm tròn phần số thập phân)
+
+
+6. Callback
+    - Là hàm
+    - Truyền qua đối số
+    - Được gọi lại (trong hàm nhận đối số)
+
+
+## DOM (Document Object Model)
+    - Có 3 thành phần:
+        + Element
+        + Attribute
+        + Text
+
+1. Element: id, class, tag, css selector, HTML collection
+    - id: id of tag             -> getElementById
+    - class: class of tag       -> getElementsByClassName
+    - tag: name of tag          -> getElementsByTagName
+    - css selector              -> querySelector, querySelectorAll
+    - HTML collection: forms, a, img,...      -> document.forms['form-1']
+    - document.write
+
+2. Attribute
+    - setAttribute, getAttribute
+3. Text
+    - innerText, textContent

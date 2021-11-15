@@ -93,8 +93,35 @@
     - css selector              -> querySelector, querySelectorAll
     - HTML collection: forms, a, img,...      -> document.forms['form-1']
     - document.write
+    -> innerHTML, outerHTML
+    innerHTML: Thêm được tất cả các node vào trong element khác
+    <!-- Có thể chỉnh sửa -->
+    Attribute contenteditable=""
+    - nodeType:
+        + 1 là ElementNode
+        + 2 là AttributeNode
+        + 3 là TextNode
 
 2. Attribute
     - setAttribute, getAttribute
+
 3. Text
     - innerText, textContent
+
+## DOM style & ClassList property (add, contains, remove, toggle)
+
+## DOM event
+    1. Attribute events
+    2. Assign event using the element node
+    3. Input / select
+    4. Key up / down (nút esc trong sự kiện onkeypress không nhận)
+    5. preventDefault
+    6. stopPropagation
+    
+## Event listener
+## Json
+
+## Fetch
+
+## DOM location
+    

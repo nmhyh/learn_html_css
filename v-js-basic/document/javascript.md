@@ -120,6 +120,31 @@
     
 ## Event listener
 ## Json
+    - Là 1 định dạng dữ liệu (chuỗi)
+    - Javascript Object Notation
+    - Json: Number, String, Boolean, Null, Array, Object,...
+    - Mã hóa / Giải mã (Encode / decode)
+    - Stringify / Parse (JS types -> JSON, JSON -> JS types)
+    - Ex: var json = '["JS","PHP"]';
+          var json = '{"name":"Huynh","age":"21"}';
+
+## Promise
+    - Sync (đồng bộ)
+    - Async (Bất đồng bộ)
+        ** setTimeout, setInterval, fetch,
+            xmlHttpRequest, file reading,
+            request animation frame,... **
+        + Callback
+    
+    - Nỗi đau
+    - Lý thuyết, cách hoạt động của promise
+    - Thực hành, ví dụ
+
+    // sleep
+    setTimeout(() => {
+        console.log(1);
+    }, 1000);
+    console.log(2);
 
 ## Fetch
 

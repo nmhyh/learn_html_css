@@ -137,8 +137,14 @@
         + Callback
     
     - Nỗi đau
+        + Callback hell
+        + Pyramid of doom
+        
     - Lý thuyết, cách hoạt động của promise
     - Thực hành, ví dụ
+    1. Promise.resolve
+    2. Promise.reject
+    3. Promise.all
 
     // sleep
     setTimeout(() => {

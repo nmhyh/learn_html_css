@@ -153,6 +153,14 @@
     console.log(2);
 
 ## Fetch
+    1. Front-end: Xây dựng giao diện người dùng
+    2. Back-end: Xây dựng logic xử lý + cơ sở dữ liệu
+    API (URL) -> Application programming interface
+    Cổng giao tiếp giữa các PM
+    Backend -> API (URL) -> Fetch -> JSON/XML
+    JSON.parse -> javascript types -> Render ra giao diện với HTML
+    - response.json()
+    - JSON server: fake API Server
 
 ## DOM location
     

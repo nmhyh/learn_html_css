@@ -1,9 +1,29 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "courses": [
+    {
+      "id": 1,
+      "name": "Kiến thức cơ bản, tổng quan cho người mới bắt đầu",
+      "description": "Kiến thức cơ bản cho người mới, không phân biệt bạn theo Front-end, Back-end hay Devops"
+    },
+    {
+      "name": "Node & ExpressJS 2",
+      "description": "1. Học Back-end với Node & ExpressJS framework, hiểu các khái niệm khi làm Back-end và xây dựng RESTful API cho trang web.",
+      "id": 2
+    },
+    {
+      "name": "Kiến Thức Nhập Môn",
+      "description": "Để có cái nhìn tổng quan về ngành IT - Lập trình web các bạn nên xem các videos tại khóa này trước nhé.",
+      "id": 3
+    },
+    {
+      "name": "test 2",
+      "description": "test 2",
+      "id": 6
+    },
+    {
+      "name": "test 2",
+      "description": "test 2",
+      "id": 9
+    }
+  ]
 }

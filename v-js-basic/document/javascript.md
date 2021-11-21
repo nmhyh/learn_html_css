@@ -160,7 +160,14 @@
     Backend -> API (URL) -> Fetch -> JSON/XML
     JSON.parse -> javascript types -> Render ra giao diện với HTML
     - response.json()
-    - JSON server: fake API Server
+    - JSON server: API Server (fake) / Mock API
+    - Postman
+    - CRUD
+        + Create: Tạo mới -> POST
+        + Read: Lấy dữ liệu -> GET
+        + Update: Chỉnh sửa -> PUT / PATCH
+        + Delete: Xóa -> DELETE
+    - Ứng dụng quản lý khóa học
 
 ## DOM location
     

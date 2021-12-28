@@ -153,3 +153,66 @@
         TABLET: >= 740px & < 1024px
         MOBILE: <= 740px
 
+## Responsive là gì?
+    - Responsive là kỹ thuật giúp website hiển thị tương thích với nhiều kích thước màn hình khác nhau (Mobile, Tablet, PC,...)
+    - Tối ưu trải nghiệm người dùng:
+        1. Hiển thị rõ ràng các thành phần (hình ảnh, cỡ chữ, nút bấm,...)
+        2. Ẩn/hiện các thành phần phù hợp theo kích thước màn hình
+
+## Chúng ta sẽ làm gì?
+    1. Dùng CSS thay đổi kích thước phù hợp cho các thành phần hiển thị trên website (hình ảnh, âm thanh, nút bấm,...)
+    2. Dùng CSS để ẩn/hiện các thành phần phù hợp theo kích thước màn hình
+
+## Media query?
+    @media not|only mediatype and (mediafeature and|or|not mediafeature) {
+        CSS-Code;
+    }
+
+    1. Keywords:
+        - not
+        - only
+        - and
+        - or
+
+    2. Mediatypes:
+        - print
+        - screen
+        - speen
+        - all - default
+
+    3. Media Feature:
+        - min-width
+        - max-width
+        - ...
+
+    4. Polyfill? (respond.js polyfill cdn)
+        - Sử dụng responsive cho trình duyệt cũ
+
+## Breakpoints?
+    - Breakpoints là những điểm/vị trí mà bố cục website sẽ thay đổi - thích ứng để tạo nên giao diện responsive
+
+## Media query: px, rem or em? (search google)
+
+## Grid system?
+    1. Xuất hiện từ đầu thế kỷ XX trong phong trào (Constructivism) nghệ thuật / kiến trúc
+    2. Tạo nên các khung nền, hỗ trợ việc sắp xếp bố cục theo trật tự / thống nhất / cân bằng
+    3. Hệ thống lưới thường gặp:
+        - Lưới nhiều cột (Muitilcolumn grid)
+        - Lưới 1 cột (Single column gird)
+        - Lưới module (Modular grid)
+        - Lưới đường cơ sở (Baseline grid)
+    4. Vai trò
+        - Tổ chức: Có các đường căn giống tiện lợi, dễ dàng sắp xếp các thành phần được ngăn nắp
+        - Cân bằng: Dù là đối xứng / bất đối xứng, mang lại cái nhìn trực quan, đảm bảo sự cân bằng
+        - Tách biệt thành phần: Phân chia nội dung, tạo khoảng cách các thành phần hiệu quả
+    5. Ứng dụng
+        - Lưới trong thiết kế UI/UX: Vai trò đặc biệt quan trọng trong Responsive web design
+        - Lưới trong in ấn: Google "Grid system"
+    6. Responsive web design
+        - Grid (<> CSS Grid): Thành phần cha
+        - Row: Dòng
+        - Column: Cột
+        - Getter: Khoảng cách 2 phía của Column
+
+
+

@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.item {
+	margin-top: 16px;
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+	min-height: 380px;
+	line-height: 380px;
+	background-color: orange;
+}

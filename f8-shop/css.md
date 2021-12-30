@@ -228,4 +228,53 @@
     2. Row - Dòng (Dòng - chiều ngang, chứa Column)
     3. Column - Cột (Chứa nội dung / thành phần trên website)
 
+## IV. Tạo đối tượng Grid
+    1. Tạo class
+        - grid: full-width, chiếm hết chiều ngang đối tượng chứa (cha)
+        - wide: chiều ngang tối đa 1200px
+    2. Đặt lại chiều rộng trên các thiết bị
+        @media (min-width: 740px) and (max-width: 1023px) {
+            .wide {
+                width: 644px;
+            }
+        }
 
+        @media (min-width: 1024px) and (max-width: 1239px) {
+            .wide {
+                width: 984px;
+            }
+        }
+## V. Tạo đối tượng Row
+    Vai trò:
+        1. Chứa các columns, giúp các columns nằm theo chiều ngang
+        2. Khi tổng chiều ngang columns vượt quá kích thước Row, cho column xuống hàng
+        3. Loại bỏ khoảng thừa do gutters tạo ra 2 phía
+
+    CSS:
+    @media (min-width: 740px) {
+        .row {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+    }
+
+    @media (min-width: 1113px) {
+        .row {
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+    }
+    
+    @media (min-width: 1024px) and (max-width: 1239px) {
+        .wide .row {
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+    }
+
+
+## VI. Tạo đối tượng Column
+    Vai trò:
+        Chứa các thành phần trên website
+
+        

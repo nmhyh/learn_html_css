@@ -1,0 +1,116 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.box {
+	width: 50px;
+	height: 50px;
+}
+
+.blue {
+	margin-top: 10px;
+	/* background-color: blue; */
+	/* Khai báo thuộc tính muốn chuyển động animation */
+	/* transition-property: background-color, width; */
+	/* Thời gian thay đổi */
+	/* transition-duration: 2s, 3s, 10s; */
+	/* Sau khoảng thời gian 2s mới đổi */
+	/* transition-delay: 2s; */
+	/* Là 1 hàm để tính toán thời gian thay đổi của 1 cái gì đó */
+	/* transition-timing-function: ease-in-out, ease-in; */
+	/* viết tắt */
+	/* transition: background-color 2s ease-in-out, width 4s ease-in; */
+	/* transition: all 2s ease-in-out; */
+	position: relative;
+	/* animation-name: loading, move, scale	;
+	animation-duration: 2s;
+	animation-iteration-count: infinite, 3;
+	animation-direction: alternate;
+	animation-delay: 2s; */
+	/* Viết tắt animation */
+	animation: loading 2s infinite alternate, move 4s infinite alternate;
+}
+
+/* Using Transition */
+/* .blue:hover {
+	width: 250px;
+	background-color: brown;
+} */
+
+/* Using Animation */
+@keyframes loading {
+	0% {
+		background-color: blue; 
+	}
+	50% {
+		background-color: yellow;
+		width: 200px;
+		height: 200px;
+	}
+	75% {
+
+	}
+	100% {
+
+	}
+	/* from {
+		background-color: blue; 
+	}
+	to {
+		background-color: brown;
+		width: 150px;
+		height: 150px;
+	} */
+}
+
+@keyframes move {
+	from {
+		left: 0;
+	}
+	to {
+		left: 50px;
+	}
+}
+
+.menu li {
+	display: inline-block;
+	position: relative;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.menu li::after {
+	width: 0;
+	height: 4px;
+	background-color: black;
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	transition: width 1s;
+}
+
+.menu li:hover::after {
+	width: 100%;
+}
+
+.loading {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 50px;
+	height: 50px;
+	border: 5px solid black;
+	border-top-color: red;
+	border-right-color: burlywood;
+	border-bottom-color: chartreuse;
+	border-radius: 50%;
+	animation: circle-loading 1s infinite linear;
+}
+
+@keyframes circle-loading {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
